@@ -217,7 +217,6 @@ img {
 }
 
 .plano:nth-last-child(1) {
-	background-color: var(--crl-turquoise-medium);
 	padding-bottom: 20px;
 }
 
@@ -227,6 +226,8 @@ img {
 	font-weight: 700;
 	font-size: 48px;
 	padding: 20px;
+	margin-top: 20px;
+	
 }
 
 .plano__preco {
@@ -235,6 +236,7 @@ img {
 	font-size: 48px;
 	display: block;
 	padding-left: 130px;
+	margin-top: 20px;
 }
 
 .plano__preco > sup {
@@ -253,14 +255,21 @@ img {
 .plano__lista {
 	max-width: 195px;
 	margin: 0 auto;	
+	
 }
 
 .plano_lista__item {
 	display: flex;
-	margin: 10px 0;
+	margin: 10px auto;
 	font-family: var(--ff-primary);
 	font-weight: 400;
 
+}
+.plano_lista__item-first{
+	display: flex;
+	font-family: var(--ff-primary);
+	font-weight: 400;
+	margin: 21.2px auto;
 }
 
 .plano_lista__item::before {
@@ -274,18 +283,33 @@ img {
     background: black;
 }
 
+.plano_lista__item-first::before{
+	content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+	margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background: black;
+}
+
 .plano__btn-comprar {
 	display: flex;
 	justify-content: center;
 	margin: 20px auto;
-	padding-top: 20px;
+	padding: 10px;
 	font-size: 32px;
 	font-family: var(--ff-primary);
 	font-weight: 700;
+	border-radius: 10px;
+	width: 200px;
 }
-.plano__btn-comprar:hover {
-	color: var(--crl--green-light);
+
+.plano__btn-comprar:nth-last-child(1){
+	background-color: rgb(7, 204, 7);
 }
+
 
 /**********************************/
 /* 7. Vantagens
