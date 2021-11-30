@@ -192,7 +192,7 @@ img {
 /**********************************/
 
 .planos {
-	background-color: var(--crl--green-light);
+	background-color: var(--crl--turquoise-dark);
 	padding: 20px;
 }
 
@@ -214,6 +214,9 @@ img {
 	background-color: var(--crl-white);
 	border-radius: 15px;
 	box-shadow: 0px 0px 3px 1px black;
+}
+.plano a {
+	color: white;
 }
 
 .plano:nth-last-child(1) {
@@ -286,37 +289,46 @@ img {
 .plano_lista__item-first::before{
 	content: "";
     display: block;
+
     width: 5px;
     height: 5px;
+
 	margin-top: 5px;
     margin-right: 5px;
     border-radius: 5px;
+
     background: black;
 }
 
 .plano__btn-comprar {
 	display: flex;
+	width: 200px;
 	justify-content: center;
+
 	margin: 20px auto;
 	padding: 10px;
+
 	font-size: 32px;
 	font-family: var(--ff-primary);
 	font-weight: 700;
+
 	border-radius: 10px;
-	width: 200px;
+	background-color: rgba(0, 0, 0, 0.719);
+
+	transition: 0.2s;
 }
 
-.plano__btn-comprar:nth-last-child(1){
-	background-color: rgb(7, 204, 7);
-}
+.plano__btn-comprar:hover{
+	background-color: rgba(0, 0, 0, 0.411);
 
+}
 
 /**********************************/
 /* 7. Vantagens
 /**********************************/
 
 .vantagens {
-	background-color: var(--crl-turquoise-medium);	
+	background-color: var(--crl--green-light);	
 	padding-bottom: 30px;
 }
 
@@ -354,7 +366,7 @@ img {
     width: 5px;
     height: 25px;
     margin-right: 5px;
-	background-color: var(--crl--green-light);
+	background-color: var(--crl--turquoise-dark);
 }
 
 .vantagens__descricao {
@@ -427,7 +439,7 @@ img {
 /**********************************/
 
 .footer {
-	background-color: var(--crl--green-light);	
+	background-color: var(--crl-turquoise-medium);	
 }
 
 .footer-c {
